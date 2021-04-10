@@ -1,0 +1,10 @@
+<h1><%= @pet.name %> is very lost 😢</h1>
+
+<p><%= @pet.name %> was found at <%= @pet.address %></p>
+<p><%= @pet.name %> is a <%= @pet.species %></p>
+<p><%= @pet.name %> was found on <%= @pet.found_on %></p>
+
+
+<%= link_to 'Delete this pet', pet_path(@pet), method: :delete, data: { confirm: 'Are you sure?' }  %>
+<%= link_to 'Edit this pet', edit_pet_path(@pet) %>
+<%= link_to 'Back to all pets', pets_path %>
